@@ -1,0 +1,95 @@
+/* Self-contained on purpose: a privacy page loads nothing from third parties. */
+:root {
+  color-scheme: light dark;
+  --bg: #fbfbfe;
+  --surface: #f0f1f8;
+  --text: #1b1c22;
+  --muted: #4a4d5c;
+  --accent: #3d4fb8;
+  --rule: #d9dbe7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121318;
+    --surface: #1d1f27;
+    --text: #e4e5ee;
+    --muted: #b3b6c6;
+    --accent: #aab6ff;
+    --rule: #33364a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 1.0625rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 16px 4rem;
+}
+
+nav.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+nav.languages [aria-current] {
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin: 0 0 0.25rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2.25rem 0 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+
+.updated {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.summary {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+footer {
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
