@@ -5,7 +5,8 @@ https://privacy.onova.tech.
 
 | Path | Purpose |
 |---|---|
-| `pocket-tools/` | Pocket Tools privacy policy (English); `pt-br/` and `es/` hold the translations. Keep all three in sync. |
+| `polytools/` | PolyTools privacy policy (English); `pt-br/` and `es/` hold the translations. Keep all three in sync. The app's Settings → Privacy policy row opens this address. |
+| `pocket-tools/` | The old address, from before the app's rename (November 2026): each page forwards to its `polytools/` counterpart. GitHub Pages can't send real redirects, so these use a meta refresh and a canonical link. |
 | `favicon.svg`, `favicon.ico`, `apple-touch-icon.png` | The Onova Tech logo as the site icon. The SVG is the source; the ICO (16, 32 and 48 px) and the 180 px PNG are drawn from it. |
 | `app-ads.txt` | Authorized ad sellers for Onova Tech apps (AdMob, publisher `pub-3506335232902582`). |
 | `CNAME` | Custom domain for GitHub Pages. |
